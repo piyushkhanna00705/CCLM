@@ -105,7 +105,7 @@ def get_acc(results, test_file):
                     item['answer'] = list(item['label'].keys())[0]
                 test_data += ann
             else:
-                ann = json.load(f)
+                # ann = json.load(f)
                 for k, v in ann.items():
                     v['question_id'] = k
                     v['img_id'] = v.pop('imageId')
@@ -294,6 +294,7 @@ def main(args, config):
     total_time_str = str(datetime.timedelta(seconds=int(total_time)))
     print('### Time {}'.format(total_time_str))
 
+# python3 run.py --dist f4 --task gqa --output_dir CCLM_output/ --checkpoint data/cclm_3m_epoch_29.th --bs 128 --seed 42
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()

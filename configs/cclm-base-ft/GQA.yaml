@@ -1,3 +1,5 @@
+#Used for zero-shot test
+
 train_file: ['iglue/datasets/gqa/annotations/train.json',]
 valid_file: ['iglue/datasets/gqa/annotations/valid.json']
 
@@ -27,14 +29,17 @@ test_file: {
 
 
 ## Vision Encoder
-vision_config: 'configs/config_swinB_384.json'
+# vision_config: 'configs/config_swinB_384.json'
+vision_config: 'configs/config_swinB_224.json'
+
 
 use_clip_vit: False
 #image_res: 384
 #patch_size: 16
 
 use_swin: True
-image_res: 384
+# image_res: 384
+image_res: 224
 patch_size: 32
 
 
