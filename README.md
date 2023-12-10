@@ -1,7 +1,10 @@
 # CCLM: Towards Unified Cross-Lingual Cross-Modal Pre-training 
 
 
-**[Cross-View Language Modeling: Towards Unified
+Creating symlink for GQA images on babel: ln -s /data/datasets/GQA/images gqa
+
+
+**[Cross-View Language Modeling: Towards Unified``
 Cross-Lingual Cross-Modal Pre-training](https://arxiv.org/abs/2206.00621). **Yan Zeng, Wangchunshu Zhou, Ao Luo, Xinsong Zhang arXiv 2022.**
 
 - June 2023: release more powerful CCLM (base & large) pre-trained based on [X<sup>2</sup>-VLM](https://github.com/zengyan-97/X2-VLM) 

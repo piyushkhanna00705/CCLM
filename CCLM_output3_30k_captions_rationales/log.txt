@@ -1,0 +1,3 @@
+{"train_lr": "0.00002", "train_loss": "1.78909", "valid_acc": 0.5065348094077025, "epoch": 2}
+{"train_lr": "0.00001", "train_loss": "1.45883", "valid_acc": 0.5174690675591768, "epoch": 3}
+{"train_lr": "0.00000", "train_loss": "1.26261", "valid_acc": 0.5225575865881177, "epoch": 4}

@@ -31,7 +31,7 @@ text_num_hidden_layers: 12
 num_dec_layers: 6
 batch_size_train: 32
 batch_size_test: 4
-max_tokens: 40
+max_tokens: 300
 k_test: 128
 
 

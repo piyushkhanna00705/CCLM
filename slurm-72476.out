@@ -1,0 +1,70 @@
++ source /data/tir/projects/tir6/general/piyushkh/conda/bin/activate cclm
+++ _CONDA_ROOT=/data/tir/projects/tir6/general/piyushkh/conda
+++ . /data/tir/projects/tir6/general/piyushkh/conda/etc/profile.d/conda.sh
++++ export CONDA_EXE=/data/tir/projects/tir6/general/piyushkh/conda/bin/conda
++++ CONDA_EXE=/data/tir/projects/tir6/general/piyushkh/conda/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/data/tir/projects/tir6/general/piyushkh/conda/bin/python
++++ CONDA_PYTHON_EXE=/data/tir/projects/tir6/general/piyushkh/conda/bin/python
++++ '[' -z x ']'
+++ conda activate cclm
+++ local cmd=activate
+++ case "$cmd" in
+++ __conda_activate activate cclm
+++ '[' -n '' ']'
+++ local ask_conda
++++ PS1=
++++ __conda_exe shell.posix activate cclm
++++ /data/tir/projects/tir6/general/piyushkh/conda/bin/conda shell.posix activate cclm
+++ ask_conda='PS1='\''(cclm) '\''
+export PATH='\''/data/tir/projects/tir6/general/piyushkh/.conda/envs/cclm/bin:/data/tir/projects/tir6/general/piyushkh/conda/condabin:/data/tir/projects/tir6/general/piyushkh/conda/bin:/home/piyushkh/.local/bin:/home/piyushkh/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin'\''
+export CONDA_PREFIX='\''/data/tir/projects/tir6/general/piyushkh/.conda/envs/cclm'\''
+export CONDA_SHLVL='\''3'\''
+export CONDA_DEFAULT_ENV='\''cclm'\''
+export CONDA_PROMPT_MODIFIER='\''(cclm) '\''
+export CONDA_PREFIX_2='\''/data/tir/projects/tir6/general/piyushkh/.conda/envs/vipergpt2'\''
+export CONDA_EXE='\''/data/tir/projects/tir6/general/piyushkh/conda/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/data/tir/projects/tir6/general/piyushkh/conda/bin/python'\'''
+++ eval 'PS1='\''(cclm) '\''
+export PATH='\''/data/tir/projects/tir6/general/piyushkh/.conda/envs/cclm/bin:/data/tir/projects/tir6/general/piyushkh/conda/condabin:/data/tir/projects/tir6/general/piyushkh/conda/bin:/home/piyushkh/.local/bin:/home/piyushkh/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin'\''
+export CONDA_PREFIX='\''/data/tir/projects/tir6/general/piyushkh/.conda/envs/cclm'\''
+export CONDA_SHLVL='\''3'\''
+export CONDA_DEFAULT_ENV='\''cclm'\''
+export CONDA_PROMPT_MODIFIER='\''(cclm) '\''
+export CONDA_PREFIX_2='\''/data/tir/projects/tir6/general/piyushkh/.conda/envs/vipergpt2'\''
+export CONDA_EXE='\''/data/tir/projects/tir6/general/piyushkh/conda/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/data/tir/projects/tir6/general/piyushkh/conda/bin/python'\'''
++++ PS1='(cclm) '
++++ export PATH=/data/tir/projects/tir6/general/piyushkh/.conda/envs/cclm/bin:/data/tir/projects/tir6/general/piyushkh/conda/condabin:/data/tir/projects/tir6/general/piyushkh/conda/bin:/home/piyushkh/.local/bin:/home/piyushkh/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin
++++ PATH=/data/tir/projects/tir6/general/piyushkh/.conda/envs/cclm/bin:/data/tir/projects/tir6/general/piyushkh/conda/condabin:/data/tir/projects/tir6/general/piyushkh/conda/bin:/home/piyushkh/.local/bin:/home/piyushkh/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin
++++ export CONDA_PREFIX=/data/tir/projects/tir6/general/piyushkh/.conda/envs/cclm
++++ CONDA_PREFIX=/data/tir/projects/tir6/general/piyushkh/.conda/envs/cclm
++++ export CONDA_SHLVL=3
++++ CONDA_SHLVL=3
++++ export CONDA_DEFAULT_ENV=cclm
++++ CONDA_DEFAULT_ENV=cclm
++++ export 'CONDA_PROMPT_MODIFIER=(cclm) '
++++ CONDA_PROMPT_MODIFIER='(cclm) '
++++ export CONDA_PREFIX_2=/data/tir/projects/tir6/general/piyushkh/.conda/envs/vipergpt2
++++ CONDA_PREFIX_2=/data/tir/projects/tir6/general/piyushkh/.conda/envs/vipergpt2
++++ export CONDA_EXE=/data/tir/projects/tir6/general/piyushkh/conda/bin/conda
++++ CONDA_EXE=/data/tir/projects/tir6/general/piyushkh/conda/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/data/tir/projects/tir6/general/piyushkh/conda/bin/python
++++ CONDA_PYTHON_EXE=/data/tir/projects/tir6/general/piyushkh/conda/bin/python
+++ __conda_hashr
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
++ python3 run.py --dist f4 --task gqa --output_dir CCLM_output2_captions/ --checkpoint cclm_3m_epoch_29.th --bs 128 --seed 42
+/var/spool/slurmd/job72476/slurm_script: line 14: CCLM_output2_captions/train.log: No such file or directory

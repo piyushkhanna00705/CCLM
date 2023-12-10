@@ -1,0 +1,36 @@
+answer_list: iglue/datasets/gqa/annotations/trainval_ans2label.json
+batch_size_test: 4
+batch_size_train: 1
+image_res: 224
+k_test: 128
+max_tokens: 300
+num_dec_layers: 6
+optimizer: {lr: 3e-05, lr_mult: 2, opt: adamW, weight_decay: 0.01}
+patch_size: 32
+schedular: {epochs: 5, lr: 3e-05, num_warmup_steps: 0.1, sched: linear}
+start_eval: 2
+test_file:
+  bn: [iglue/datasets/xGQA/annotations/few_shot/bn/captions_rartionales/test_captions_rationales_final.json,
+    iglue/datasets/gqa/annotations/trainval_ans2label.json]
+  de: [iglue/datasets/xGQA/annotations/few_shot/de/captions_rationales/test_captions_rationales_final.json,
+    iglue/datasets/gqa/annotations/trainval_ans2label.json]
+  en: [iglue/datasets/xGQA/annotations/few_shot/en/captions_rationales/test_captions_rationales_final.json,
+    iglue/datasets/gqa/annotations/trainval_ans2label.json]
+  id: [iglue/datasets/xGQA/annotations/few_shot/id/captions_rationales/test_captions_rationales_final.json,
+    iglue/datasets/gqa/annotations/trainval_ans2label.json]
+  ko: [iglue/datasets/xGQA/annotations/few_shot/ko/captions_rationales/test_captions_rationales_final.json,
+    iglue/datasets/gqa/annotations/trainval_ans2label.json]
+  pt: [iglue/datasets/xGQA/annotations/few_shot/pt/captions_rationales/test_captions_rationales_final.json,
+    iglue/datasets/gqa/annotations/trainval_ans2label.json]
+  ru: [iglue/datasets/xGQA/annotations/few_shot/ru/captions_rationales/test_captions_rationales_final.json,
+    iglue/datasets/gqa/annotations/trainval_ans2label.json]
+  zh: [iglue/datasets/xGQA/annotations/few_shot/zh/captions_rationales/test_captions_rationales_final.json,
+    iglue/datasets/gqa/annotations/trainval_ans2label.json]
+text_encoder: data/xlm-roberta-large
+text_num_hidden_layers: 12
+train_file: [iglue/datasets/xGQA/annotations/few_shot/en/train_30000.json]
+use_clip_vit: false
+use_swin: true
+valid_file: [iglue/datasets/gqa/annotations/valid.json]
+vision_config: configs/config_swinB_224.json
+vqa_root: images/gqa/

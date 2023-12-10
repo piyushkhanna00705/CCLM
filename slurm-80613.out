@@ -1,0 +1,135 @@
++ source /data/tir/projects/tir6/general/piyushkh/conda/bin/activate cclm
+++ _CONDA_ROOT=/data/tir/projects/tir6/general/piyushkh/conda
+++ . /data/tir/projects/tir6/general/piyushkh/conda/etc/profile.d/conda.sh
++++ export CONDA_EXE=/data/tir/projects/tir6/general/piyushkh/conda/bin/conda
++++ CONDA_EXE=/data/tir/projects/tir6/general/piyushkh/conda/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/data/tir/projects/tir6/general/piyushkh/conda/bin/python
++++ CONDA_PYTHON_EXE=/data/tir/projects/tir6/general/piyushkh/conda/bin/python
++++ '[' -z x ']'
+++ conda activate cclm
+++ local cmd=activate
+++ case "$cmd" in
+++ __conda_activate activate cclm
+++ '[' -n '' ']'
+++ local ask_conda
++++ PS1=
++++ __conda_exe shell.posix activate cclm
++++ /data/tir/projects/tir6/general/piyushkh/conda/bin/conda shell.posix activate cclm
+++ ask_conda='PS1='\''(cclm) '\''
+export PATH='\''/data/tir/projects/tir6/general/piyushkh/.conda/envs/cclm/bin:/data/tir/projects/tir6/general/piyushkh/conda/condabin:/data/tir/projects/tir6/general/piyushkh/conda/bin:/home/piyushkh/.local/bin:/home/piyushkh/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin'\''
+export CONDA_PREFIX='\''/data/tir/projects/tir6/general/piyushkh/.conda/envs/cclm'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_DEFAULT_ENV='\''cclm'\''
+export CONDA_PROMPT_MODIFIER='\''(cclm) '\''
+export CONDA_PREFIX_1='\''/data/tir/projects/tir6/general/piyushkh/conda'\''
+export CONDA_EXE='\''/data/tir/projects/tir6/general/piyushkh/conda/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/data/tir/projects/tir6/general/piyushkh/conda/bin/python'\'''
+++ eval 'PS1='\''(cclm) '\''
+export PATH='\''/data/tir/projects/tir6/general/piyushkh/.conda/envs/cclm/bin:/data/tir/projects/tir6/general/piyushkh/conda/condabin:/data/tir/projects/tir6/general/piyushkh/conda/bin:/home/piyushkh/.local/bin:/home/piyushkh/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin'\''
+export CONDA_PREFIX='\''/data/tir/projects/tir6/general/piyushkh/.conda/envs/cclm'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_DEFAULT_ENV='\''cclm'\''
+export CONDA_PROMPT_MODIFIER='\''(cclm) '\''
+export CONDA_PREFIX_1='\''/data/tir/projects/tir6/general/piyushkh/conda'\''
+export CONDA_EXE='\''/data/tir/projects/tir6/general/piyushkh/conda/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/data/tir/projects/tir6/general/piyushkh/conda/bin/python'\'''
++++ PS1='(cclm) '
++++ export PATH=/data/tir/projects/tir6/general/piyushkh/.conda/envs/cclm/bin:/data/tir/projects/tir6/general/piyushkh/conda/condabin:/data/tir/projects/tir6/general/piyushkh/conda/bin:/home/piyushkh/.local/bin:/home/piyushkh/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin
++++ PATH=/data/tir/projects/tir6/general/piyushkh/.conda/envs/cclm/bin:/data/tir/projects/tir6/general/piyushkh/conda/condabin:/data/tir/projects/tir6/general/piyushkh/conda/bin:/home/piyushkh/.local/bin:/home/piyushkh/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin
++++ export CONDA_PREFIX=/data/tir/projects/tir6/general/piyushkh/.conda/envs/cclm
++++ CONDA_PREFIX=/data/tir/projects/tir6/general/piyushkh/.conda/envs/cclm
++++ export CONDA_SHLVL=2
++++ CONDA_SHLVL=2
++++ export CONDA_DEFAULT_ENV=cclm
++++ CONDA_DEFAULT_ENV=cclm
++++ export 'CONDA_PROMPT_MODIFIER=(cclm) '
++++ CONDA_PROMPT_MODIFIER='(cclm) '
++++ export CONDA_PREFIX_1=/data/tir/projects/tir6/general/piyushkh/conda
++++ CONDA_PREFIX_1=/data/tir/projects/tir6/general/piyushkh/conda
++++ export CONDA_EXE=/data/tir/projects/tir6/general/piyushkh/conda/bin/conda
++++ CONDA_EXE=/data/tir/projects/tir6/general/piyushkh/conda/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/data/tir/projects/tir6/general/piyushkh/conda/bin/python
++++ CONDA_PYTHON_EXE=/data/tir/projects/tir6/general/piyushkh/conda/bin/python
+++ __conda_hashr
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
++ variant=rationals_subquestions
++ echo 'CCLM Variant Selected: rationals_subquestions'
+CCLM Variant Selected: rationals_subquestions
++ output_dir=CCLM_output_rationals_subquestions
++ echo 'Output Directory: CCLM_output_rationals_subquestions'
+Output Directory: CCLM_output_rationals_subquestions
++ '[' '!' -d CCLM_output_rationals_subquestions ']'
++ mkdir CCLM_output_rationals_subquestions
++ echo 'Folder '\''CCLM_output_rationals_subquestions'\'' created successfully.'
+Folder 'CCLM_output_rationals_subquestions' created successfully.
++ python3 run.py --dist f4 --task gqa --output_dir CCLM_output_rationals_subquestions/ --checkpoint cclm_3m_epoch_29.th --bs 128 --seed 42 --variant rationals_subquestions
+/data/tir/projects/tir6/general/piyushkh/conda/lib/python3.11/site-packages/torch/distributed/launch.py:181: FutureWarning: The module torch.distributed.launch is deprecated
+and will be removed in future. Use torchrun.
+Note that --use-env is set by default in torchrun.
+If your script expects `--local-rank` argument to be set, please
+change it to read from `os.environ['LOCAL_RANK']` instead. See 
+https://pytorch.org/docs/stable/distributed.html#launch-utility for 
+further instructions
+
+  warnings.warn(
+[2023-12-09 14:18:07,912] torch.distributed.run: [WARNING] 
+[2023-12-09 14:18:07,912] torch.distributed.run: [WARNING] *****************************************
+[2023-12-09 14:18:07,912] torch.distributed.run: [WARNING] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+[2023-12-09 14:18:07,912] torch.distributed.run: [WARNING] *****************************************
+[W socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+[W socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+[E socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/data/tir/projects/tir6/general/piyushkh/conda/lib/python3.11/site-packages/torch/distributed/launch.py", line 196, in <module>
+    main()
+  File "/data/tir/projects/tir6/general/piyushkh/conda/lib/python3.11/site-packages/torch/distributed/launch.py", line 192, in main
+    launch(args)
+  File "/data/tir/projects/tir6/general/piyushkh/conda/lib/python3.11/site-packages/torch/distributed/launch.py", line 177, in launch
+    run(args)
+  File "/data/tir/projects/tir6/general/piyushkh/conda/lib/python3.11/site-packages/torch/distributed/run.py", line 797, in run
+    elastic_launch(
+  File "/data/tir/projects/tir6/general/piyushkh/conda/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tir/projects/tir6/general/piyushkh/conda/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 255, in launch_agent
+    result = agent.run()
+             ^^^^^^^^^^^
+  File "/data/tir/projects/tir6/general/piyushkh/conda/lib/python3.11/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^
+  File "/data/tir/projects/tir6/general/piyushkh/conda/lib/python3.11/site-packages/torch/distributed/elastic/agent/server/api.py", line 736, in run
+    result = self._invoke_run(role)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tir/projects/tir6/general/piyushkh/conda/lib/python3.11/site-packages/torch/distributed/elastic/agent/server/api.py", line 871, in _invoke_run
+    self._initialize_workers(self._worker_group)
+  File "/data/tir/projects/tir6/general/piyushkh/conda/lib/python3.11/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^
+  File "/data/tir/projects/tir6/general/piyushkh/conda/lib/python3.11/site-packages/torch/distributed/elastic/agent/server/api.py", line 705, in _initialize_workers
+    self._rendezvous(worker_group)
+  File "/data/tir/projects/tir6/general/piyushkh/conda/lib/python3.11/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^
+  File "/data/tir/projects/tir6/general/piyushkh/conda/lib/python3.11/site-packages/torch/distributed/elastic/agent/server/api.py", line 546, in _rendezvous
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tir/projects/tir6/general/piyushkh/conda/lib/python3.11/site-packages/torch/distributed/elastic/rendezvous/static_tcp_rendezvous.py", line 54, in next_rendezvous
+    self._store = TCPStore(  # type: ignore[call-arg]
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: The server socket has failed to listen on any local network address. The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use). The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).

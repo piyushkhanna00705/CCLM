@@ -1,0 +1,157 @@
++ source /data/tir/projects/tir6/general/piyushkh/conda/bin/activate cclm
+++ _CONDA_ROOT=/data/tir/projects/tir6/general/piyushkh/conda
+++ . /data/tir/projects/tir6/general/piyushkh/conda/etc/profile.d/conda.sh
++++ export CONDA_EXE=/data/tir/projects/tir6/general/piyushkh/conda/bin/conda
++++ CONDA_EXE=/data/tir/projects/tir6/general/piyushkh/conda/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/data/tir/projects/tir6/general/piyushkh/conda/bin/python
++++ CONDA_PYTHON_EXE=/data/tir/projects/tir6/general/piyushkh/conda/bin/python
++++ '[' -z x ']'
+++ conda activate cclm
+++ local cmd=activate
+++ case "$cmd" in
+++ __conda_activate activate cclm
+++ '[' -n '' ']'
+++ local ask_conda
++++ PS1=
++++ __conda_exe shell.posix activate cclm
++++ /data/tir/projects/tir6/general/piyushkh/conda/bin/conda shell.posix activate cclm
+++ ask_conda='PS1='\''(cclm) '\''
+export PATH='\''/data/tir/projects/tir6/general/piyushkh/.conda/envs/cclm/bin:/data/tir/projects/tir6/general/piyushkh/conda/condabin:/data/tir/projects/tir6/general/piyushkh/conda/bin:/home/piyushkh/.local/bin:/home/piyushkh/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin'\''
+export CONDA_PREFIX='\''/data/tir/projects/tir6/general/piyushkh/.conda/envs/cclm'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_DEFAULT_ENV='\''cclm'\''
+export CONDA_PROMPT_MODIFIER='\''(cclm) '\''
+export CONDA_PREFIX_1='\''/data/tir/projects/tir6/general/piyushkh/conda'\''
+export CONDA_EXE='\''/data/tir/projects/tir6/general/piyushkh/conda/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/data/tir/projects/tir6/general/piyushkh/conda/bin/python'\'''
+++ eval 'PS1='\''(cclm) '\''
+export PATH='\''/data/tir/projects/tir6/general/piyushkh/.conda/envs/cclm/bin:/data/tir/projects/tir6/general/piyushkh/conda/condabin:/data/tir/projects/tir6/general/piyushkh/conda/bin:/home/piyushkh/.local/bin:/home/piyushkh/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin'\''
+export CONDA_PREFIX='\''/data/tir/projects/tir6/general/piyushkh/.conda/envs/cclm'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_DEFAULT_ENV='\''cclm'\''
+export CONDA_PROMPT_MODIFIER='\''(cclm) '\''
+export CONDA_PREFIX_1='\''/data/tir/projects/tir6/general/piyushkh/conda'\''
+export CONDA_EXE='\''/data/tir/projects/tir6/general/piyushkh/conda/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/data/tir/projects/tir6/general/piyushkh/conda/bin/python'\'''
++++ PS1='(cclm) '
++++ export PATH=/data/tir/projects/tir6/general/piyushkh/.conda/envs/cclm/bin:/data/tir/projects/tir6/general/piyushkh/conda/condabin:/data/tir/projects/tir6/general/piyushkh/conda/bin:/home/piyushkh/.local/bin:/home/piyushkh/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin
++++ PATH=/data/tir/projects/tir6/general/piyushkh/.conda/envs/cclm/bin:/data/tir/projects/tir6/general/piyushkh/conda/condabin:/data/tir/projects/tir6/general/piyushkh/conda/bin:/home/piyushkh/.local/bin:/home/piyushkh/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin
++++ export CONDA_PREFIX=/data/tir/projects/tir6/general/piyushkh/.conda/envs/cclm
++++ CONDA_PREFIX=/data/tir/projects/tir6/general/piyushkh/.conda/envs/cclm
++++ export CONDA_SHLVL=2
++++ CONDA_SHLVL=2
++++ export CONDA_DEFAULT_ENV=cclm
++++ CONDA_DEFAULT_ENV=cclm
++++ export 'CONDA_PROMPT_MODIFIER=(cclm) '
++++ CONDA_PROMPT_MODIFIER='(cclm) '
++++ export CONDA_PREFIX_1=/data/tir/projects/tir6/general/piyushkh/conda
++++ CONDA_PREFIX_1=/data/tir/projects/tir6/general/piyushkh/conda
++++ export CONDA_EXE=/data/tir/projects/tir6/general/piyushkh/conda/bin/conda
++++ CONDA_EXE=/data/tir/projects/tir6/general/piyushkh/conda/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/data/tir/projects/tir6/general/piyushkh/conda/bin/python
++++ CONDA_PYTHON_EXE=/data/tir/projects/tir6/general/piyushkh/conda/bin/python
+++ __conda_hashr
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
++ variant=captions_rationales_subquestions
++ echo 'CCLM Variant Selected: captions_rationales_subquestions'
+CCLM Variant Selected: captions_rationales_subquestions
++ output_dir=CCLM_output_captions_rationales_subquestions
++ echo 'Output Directory: CCLM_output_captions_rationales_subquestions'
+Output Directory: CCLM_output_captions_rationales_subquestions
++ '[' '!' -d CCLM_output_captions_rationales_subquestions ']'
++ mkdir CCLM_output_captions_rationales_subquestions
++ echo 'Folder '\''CCLM_output_captions_rationales_subquestions'\'' created successfully.'
+Folder 'CCLM_output_captions_rationales_subquestions' created successfully.
++ python3 run.py --dist f4 --task gqa --output_dir CCLM_output_captions_rationales_subquestions/ --checkpoint cclm_3m_epoch_29.th --bs 128 --seed 42 --variant captions_rationales_subquestions
+/data/tir/projects/tir6/general/piyushkh/conda/lib/python3.11/site-packages/torch/distributed/launch.py:181: FutureWarning: The module torch.distributed.launch is deprecated
+and will be removed in future. Use torchrun.
+Note that --use-env is set by default in torchrun.
+If your script expects `--local-rank` argument to be set, please
+change it to read from `os.environ['LOCAL_RANK']` instead. See 
+https://pytorch.org/docs/stable/distributed.html#launch-utility for 
+further instructions
+
+  warnings.warn(
+[2023-12-08 06:20:23,448] torch.distributed.run: [WARNING] 
+[2023-12-08 06:20:23,448] torch.distributed.run: [WARNING] *****************************************
+[2023-12-08 06:20:23,448] torch.distributed.run: [WARNING] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+[2023-12-08 06:20:23,448] torch.distributed.run: [WARNING] *****************************************
+Traceback (most recent call last):
+  File "/data/tir/projects/tir6/general/piyushkh/xGQA/multimodal-crosslingual-vqa/CCLM/VQA.py", line 340, in <module>
+Traceback (most recent call last):
+  File "/data/tir/projects/tir6/general/piyushkh/xGQA/multimodal-crosslingual-vqa/CCLM/VQA.py", line 340, in <module>
+    hmkdir(args.result_dir)
+  File "/data/tir/projects/tir6/general/piyushkh/xGQA/multimodal-crosslingual-vqa/CCLM/utils/hdfs_io.py", line 96, in hmkdir
+    hmkdir(args.result_dir)Traceback (most recent call last):
+
+  File "/data/tir/projects/tir6/general/piyushkh/xGQA/multimodal-crosslingual-vqa/CCLM/VQA.py", line 340, in <module>
+  File "/data/tir/projects/tir6/general/piyushkh/xGQA/multimodal-crosslingual-vqa/CCLM/utils/hdfs_io.py", line 96, in hmkdir
+    hmkdir(args.result_dir)
+  File "/data/tir/projects/tir6/general/piyushkh/xGQA/multimodal-crosslingual-vqa/CCLM/utils/hdfs_io.py", line 96, in hmkdir
+    os.mkdir(file_path)    
+os.mkdir(file_path)
+FileExistsErrorFileExistsError: [Errno 17] File exists: 'CCLM_output_captions_rationales_subquestions/result': 
+[Errno 17] File exists: 'CCLM_output_captions_rationales_subquestions/result'
+    os.mkdir(file_path)
+FileExistsError: [Errno 17] File exists: 'CCLM_output_captions_rationales_subquestions/result'
+[2023-12-08 06:20:28,454] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 3794 closing signal SIGTERM
+[2023-12-08 06:20:28,568] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 3792) of binary: /data/tir/projects/tir6/general/piyushkh/conda/bin/python3
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/data/tir/projects/tir6/general/piyushkh/conda/lib/python3.11/site-packages/torch/distributed/launch.py", line 196, in <module>
+    main()
+  File "/data/tir/projects/tir6/general/piyushkh/conda/lib/python3.11/site-packages/torch/distributed/launch.py", line 192, in main
+    launch(args)
+  File "/data/tir/projects/tir6/general/piyushkh/conda/lib/python3.11/site-packages/torch/distributed/launch.py", line 177, in launch
+    run(args)
+  File "/data/tir/projects/tir6/general/piyushkh/conda/lib/python3.11/site-packages/torch/distributed/run.py", line 797, in run
+    elastic_launch(
+  File "/data/tir/projects/tir6/general/piyushkh/conda/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/tir/projects/tir6/general/piyushkh/conda/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 264, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+VQA.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2023-12-08_06:20:28
+  host      : babel-4-32.ib
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 3793)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2023-12-08_06:20:28
+  host      : babel-4-32.ib
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 3795)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2023-12-08_06:20:28
+  host      : babel-4-32.ib
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 3792)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

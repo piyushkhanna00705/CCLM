@@ -92,8 +92,14 @@ def hmkdir(file_path: str) -> bool:
     if file_path.startswith('hdfs'):
         os.system("{} dfs -mkdir -p {}".format(HADOOP_BIN, file_path))  # exist ok
     else:
-        if not os.path.exists(file_path):
-            os.mkdir(file_path)
+        try:
+            if not os.path.exists(file_path):
+                os.mkdir(file_path)
+        except FileExistsError as e:
+            print(e)
+            print("Path existing check: ", os.path.exists(file_path))
+            print("Not creating new directory, continuing...")
+            pass
     return True
 
 

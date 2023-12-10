@@ -201,6 +201,11 @@ def main(args, config):
                                         write_to_hdfs=world_size > 8, save_result=False)
                 if utils.is_main_process():
                     print(f"Evaluating on {language}", flush=True)
+                    # del config['test_file'][language]
+                    # config['test_file'][language] = [f'/data/tir/projects/tir6/general/piyushkh/xGQA/multimodal-crosslingual-vqa/idea2/data/{language}/{args.variant}/test_{args.variant}_final.json',
+                    #     'iglue/datasets/gqa/annotations/trainval_ans2label.json' ]
+                    config['test_file'][language][0] = f'/data/tir/projects/tir6/general/piyushkh/xGQA/multimodal-crosslingual-vqa/idea2/data/{language}/{args.variant}/test_{args.variant}_final.json'
+                    print("Test file: ", config['test_file'][language][0])
                     get_acc(result, config['test_file'][language][0])
                 dist.barrier()
 
@@ -279,6 +284,11 @@ def main(args, config):
 
                         if utils.is_main_process():
                             print(f"Evaluating on {language}", flush=True)
+                            # del config['test_file'][language]
+                            # config['test_file'][language] = [f'/data/tir/projects/tir6/general/piyushkh/xGQA/multimodal-crosslingual-vqa/idea2/data/{language}/{args.variant}/test_{args.variant}_final.json',
+                            #     'iglue/datasets/gqa/annotations/trainval_ans2label.json' ]
+                            config['test_file'][language][0] = f'/data/tir/projects/tir6/general/piyushkh/xGQA/multimodal-crosslingual-vqa/idea2/data/{language}/{args.variant}/test_{args.variant}_final.json'
+                            print("Test file: ", config['test_file'][language][0])
                             acc = get_acc(result, config['test_file'][language][0])
                             if language != 'en':  # following iglue
                                 epoch_acc += acc
@@ -314,10 +324,16 @@ if __name__ == '__main__':
     parser.add_argument('--fewshot', default='', type=str)
     parser.add_argument('--evaluate', action='store_true')
     parser.add_argument('--load_vqa_pretrain', action='store_true')
+    parser.add_argument('--variant', default='', type=str)
 
     args = parser.parse_args()
 
     config = yaml.load(open(args.config, 'r'), Loader=yaml.Loader)
+
+    # del config['train_file']
+    # del config['valid_file']
+    config['train_file'] = f"/data/tir/projects/tir6/general/piyushkh/xGQA/multimodal-crosslingual-vqa/idea2/data/en/{args.variant}/train_30000_{args.variant}_final.json"
+    config['valid_file'] = f"/data/tir/projects/tir6/general/piyushkh/xGQA/multimodal-crosslingual-vqa/idea2/data/en/{args.variant}/valid_{args.variant}_final.json"
 
     args.result_dir = os.path.join(args.output_dir, 'result')
     hmkdir(args.output_dir)

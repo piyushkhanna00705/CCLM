@@ -161,14 +161,32 @@ def run_vqa(args, load_vqa_pretrain=False):
 
     assert os.path.exists("images/gqa")
 
+    # variant_to_config = {
+    #     'captions': 'GQA_captions.yaml',
+    #     'captions_rationales_subquestions': 'GQA_captions_rationales_subquestions.yaml',
+    #     'rationales': 'GQA_rationales.yaml',
+    #     'captions_subquestions': 'GQA_captions_subquestions.yaml',
+    #     'rationales_subquestions': 'GQA_rationales_subquestions.yaml
+    #     'subquestions': 'GQA_subquestions.yaml',
+    # }
+
     print("### Training VQA", flush=True)
     args.config = f"configs/{args.model}/GQA_fewshot.yaml" if args.fewshot else f"configs/{args.model}/GQA.yaml"
+
+    # if not args.fewshot:
+    #     args.config = f"configs/{args.model}/{variant_to_config[args.variant]}"
+    # print(args.config)
+    # print(args.config['train_file'])
+    # del args.config['train_file']
+    # del args.config['valid_file']
+
+
 
     os.system(f"{dist_launch} "
               f"--use_env VQA.py --config {args.config} {'--load_vqa_pretrain' if load_vqa_pretrain else ''}"
               f"{f'--output_hdfs {args.output_hdfs}' if len(args.output_hdfs) else ''} --output_dir {args.output_dir} "
               f"--bs {args.bs} --seed {args.seed} --checkpoint {args.checkpoint} {'--evaluate' if args.evaluate else ''} "
-              f"{'--load_vqa_pretrain --fewshot ' + args.fewshot if args.fewshot else ''} --lr {args.lr}")
+              f"{'--load_vqa_pretrain --fewshot ' + args.fewshot if args.fewshot else ''} --lr {args.lr} --variant {args.variant}")
 
 
 def run_xvnli(args):
@@ -309,6 +327,7 @@ if __name__ == '__main__':
     parser.add_argument('--fewshot', default='', type=str, help="IGLUE fewshot. <lang>,<shot_num>, eg: ar,25")
     parser.add_argument('--lr', default=0., type=float, help="learning rate")
     parser.add_argument('--gmt', action='store_true', help="whether use google machine translation as test set")
+    parser.add_argument('--variant', default='', type=str, help="cclm_variant")
 
     args = parser.parse_args()
 

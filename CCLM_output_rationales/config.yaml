@@ -1,0 +1,36 @@
+answer_list: iglue/datasets/gqa/annotations/trainval_ans2label.json
+batch_size_test: 4
+batch_size_train: 1
+image_res: 224
+k_test: 128
+max_tokens: 512
+num_dec_layers: 6
+optimizer: {lr: 3e-05, lr_mult: 2, opt: adamW, weight_decay: 0.01}
+patch_size: 32
+schedular: {epochs: 5, lr: 3e-05, num_warmup_steps: 0.1, sched: linear}
+start_eval: 2
+test_file:
+  bn: [/data/tir/projects/tir6/general/piyushkh/xGQA/multimodal-crosslingual-vqa/idea2/data/bn/captions_rationales_subquestions/test_captions_rationales_subquestions_final.json,
+    iglue/datasets/gqa/annotations/trainval_ans2label.json]
+  de: [/data/tir/projects/tir6/general/piyushkh/xGQA/multimodal-crosslingual-vqa/idea2/data/de/captions_rationales_subquestions/test_captions_rationales_subquestions_final.json,
+    iglue/datasets/gqa/annotations/trainval_ans2label.json]
+  en: [/data/tir/projects/tir6/general/piyushkh/xGQA/multimodal-crosslingual-vqa/idea2/data/en/captions_rationales_subquestions/test_captions_rationales_subquestions_final.json,
+    iglue/datasets/gqa/annotations/trainval_ans2label.json]
+  id: [/data/tir/projects/tir6/general/piyushkh/xGQA/multimodal-crosslingual-vqa/idea2/data/id/captions_rationales_subquestions/test_captions_rationales_subquestions_final.json,
+    iglue/datasets/gqa/annotations/trainval_ans2label.json]
+  ko: [/data/tir/projects/tir6/general/piyushkh/xGQA/multimodal-crosslingual-vqa/idea2/data/ko/captions_rationales_subquestions/test_captions_rationales_subquestions_final.json,
+    iglue/datasets/gqa/annotations/trainval_ans2label.json]
+  pt: [/data/tir/projects/tir6/general/piyushkh/xGQA/multimodal-crosslingual-vqa/idea2/data/pt/captions_rationales_subquestions/test_captions_rationales_subquestions_final.json,
+    iglue/datasets/gqa/annotations/trainval_ans2label.json]
+  ru: [/data/tir/projects/tir6/general/piyushkh/xGQA/multimodal-crosslingual-vqa/idea2/data/ru/captions_rationales_subquestions/test_captions_rationales_subquestions_final.json,
+    iglue/datasets/gqa/annotations/trainval_ans2label.json]
+  zh: [/data/tir/projects/tir6/general/piyushkh/xGQA/multimodal-crosslingual-vqa/idea2/data/zh/captions_rationales_subquestions/test_captions_rationales_subquestions_final.json,
+    iglue/datasets/gqa/annotations/trainval_ans2label.json]
+text_encoder: data/xlm-roberta-large
+text_num_hidden_layers: 12
+train_file: /data/tir/projects/tir6/general/piyushkh/xGQA/multimodal-crosslingual-vqa/idea2/data/en/rationales/train_30000_rationales_final.json
+use_clip_vit: false
+use_swin: true
+valid_file: /data/tir/projects/tir6/general/piyushkh/xGQA/multimodal-crosslingual-vqa/idea2/data/en/rationales/valid_rationales_final.json
+vision_config: configs/config_swinB_224.json
+vqa_root: images/gqa/
